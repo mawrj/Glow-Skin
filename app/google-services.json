@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "735781417407",
+    "project_id": "gloweskinn",
+    "storage_bucket": "gloweskinn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735781417407:android:419db8c28395636ab5f10a",
+        "android_client_info": {
+          "package_name": "com.mawar.glowskin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBes3zIFYveXFCK0UIthT97leIbEJHJy2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Mode Gelap -->
+    <color name="black">#FFFFFF</color>
+    <color name="white">#160040</color>
+    <color name="red">#FFFFFF</color>
+    <color name="lightRed">#4c0070</color>
+    <color name="lightGrey">#e9e9e9</color>
+    <color name="grey">#5D5859</color>
+    <color name="darkGrey">#FF000000</color>
+    <color name="dark">#FFFFFF</color>
+    <color name="light">#FFFFFF</color>
+    <color name="rec">#160040</color>
+</resources>

@@ -1,0 +1,200 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivityAdmin.AddItemActivityAdmin">
+
+    <!-- ScrollView untuk konten panjang -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <!-- Tombol Kembali dan Judul Halaman -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah Produk"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- Field untuk Nama Produk -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Produk"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan nama produk"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/darkGrey"
+                android:padding="10dp"
+                android:background="@drawable/grey_bg"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Field untuk Deskripsi Produk -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi Produk"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan deskripsi produk"
+                android:padding="10dp"
+                android:textColor="@color/darkGrey"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/grey_bg"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Field untuk Harga Produk -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Produk"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan harga produk"
+                android:padding="10dp"
+                android:textColor="@color/darkGrey"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/grey_bg"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Field untuk Rating Produk -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating Produk"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan rating produk"
+                android:padding="10dp"
+                android:textColor="@color/darkGrey"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/grey_bg"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Field untuk URL Gambar -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL Gambar"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etPicUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pisahkan URL dengan koma"
+                android:padding="10dp"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/darkGrey"
+                android:background="@drawable/grey_bg"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Field untuk Category ID (Kategori Produk) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Kategori"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etCategoryId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan ID Kategori"
+                android:textColorHint="@color/grey"
+                android:padding="10dp"
+                android:textColor="@color/darkGrey"
+                android:background="@drawable/grey_bg"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Switch untuk Show Recommended -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchRecommended"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="Tampilkan sebagai rekomendasi"
+                    android:textSize="14sp"
+                    android:textColor="@color/dark" />
+            </LinearLayout>
+
+            <!-- Tombol Simpan -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:text="Simpan Produk"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
